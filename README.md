@@ -1,6 +1,6 @@
 Introduction
 ============
-This is a C# library which is a port of John Walker's ENT- a pseudorandom sequence analyzer. My implementation is not 100% complete, but has all of the main aspects.
+This is a C# library which is a port of John Walker's ENT- a pseudorandom sequence analyzer. My implementation is not 100% complete, but has all of the main aspects. Original page still online at http://www.fourmilab.ch/random/ as of 12/12/2014.
 
 To use this ENT class, simply instantiate an EntCalc, and perform an AddSample for each byte, or use the overloads to add an entire byte array. When all samples have been added, call EndCalculation() which will return a struct with all of the results.
 

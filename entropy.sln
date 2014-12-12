@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "entropy", "entropy.csproj", "{59D16F55-CC2F-441F-BDBE-06ECAD51F66D}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{59D16F55-CC2F-441F-BDBE-06ECAD51F66D}.Debug.ActiveCfg = Debug|.NET
+		{59D16F55-CC2F-441F-BDBE-06ECAD51F66D}.Debug.Build.0 = Debug|.NET
+		{59D16F55-CC2F-441F-BDBE-06ECAD51F66D}.Release.ActiveCfg = Release|.NET
+		{59D16F55-CC2F-441F-BDBE-06ECAD51F66D}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

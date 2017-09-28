@@ -17,4 +17,4 @@ Notes
 =====
 I did get one reply on the Code Project post that indicated that the numbers seemed to compare favorably with the original source.
 
-The code has not been modified in something like a decade and may need some updats to work with newer .NET.
+The code has not been modified in something like a decade and may need some updates to work with newer .NET.

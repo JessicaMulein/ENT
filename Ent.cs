@@ -216,7 +216,7 @@ namespace Ent
             {
                 if (this.prob[i] > 0.0)
                 {
-                    this.ent += this.prob[i] * log2(1 / this.prob[i]);
+                    this.ent += this.prob[i] * Math.Log(1 / this.prob[i], 2);
                 }
             }
 
@@ -256,12 +256,6 @@ namespace Ent
             result.OccuranceCount = this.ccount;
             result.NumberOfSamples = this.totalc;
             return result;
-        }
-
-        /*  LOG2  --  Calculate log to the base 2  */
-        static double log2(double x)
-        {
-            return Math.Log(x, 2);      //can use this in C#
         }
     }
 }

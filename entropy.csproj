@@ -7,6 +7,13 @@
     <GenerateDocumentationFile>False</GenerateDocumentationFile>
     <Nullable>enable</Nullable>
     <BaseOutputPath>bin\</BaseOutputPath>
+    <AssemblyName>EntCalc</AssemblyName>
+    <RootNamespace>Ent</RootNamespace>
+    <PackageId>EntCalc</PackageId>
+    <Authors>John Walker, Jessica Mulein</Authors>
+    <Company>John Walker, Jessica Mulein</Company>
+    <Product>EntCalc</Product>
+    <Description>C# Port of John Walker's EntCalc</Description>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

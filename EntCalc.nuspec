@@ -1,0 +1,60 @@
+﻿<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <!-- Identifier that must be unique within the hosting gallery -->
+        <id>EntCalc</id>
+
+        <!-- Package version number that is used when resolving dependencies -->
+        <version>1.0.0.0</version>
+
+        <!-- Authors contain text that appears directly on the gallery -->
+        <authors>Jessica Mulein, John Walker</authors>
+
+        <!--
+            Owners are typically nuget.org identities that allow gallery
+            users to easily find other packages by the same owners.
+        -->
+        <owners>jessicamulein</owners>
+
+         <!-- Project URL provides a link for the gallery -->
+        <projectUrl>https://github.com/JessicaMulein/ENT</projectUrl>
+
+         <!-- License information is displayed on the gallery -->
+        <license type="expression">Apache-2.0</license>
+
+
+        <!-- Icon is used in Visual Studio's package manager UI -->
+        <!-- icon>icon.png</icon -->
+
+        <!--
+            If true, this value prompts the user to accept the license when
+            installing the package.
+        -->
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+
+        <!-- Any details about this particular release -->
+        <releaseNotes>generally available</releaseNotes>
+
+        <!--
+            The description can be used in package manager UI. Note that the
+            nuget.org gallery uses information you add in the portal.
+        -->
+        <description>C# Port of John Walker's EntCalc</description>
+
+        <!-- Copyright information -->
+        <copyright>Copyright ©2021 Jessica Mulein.</copyright>
+
+        <!-- Tags appear in the gallery and can be used for tag searches -->
+        <tags>entropy johnwalker ent entcalc</tags>
+
+        <!-- Dependencies are automatically installed when the package is installed -->
+        <dependencies>
+        </dependencies>
+    </metadata>
+
+    <!-- A readme.txt to display when the package is installed -->
+    <files>
+        <file src="README.md" target="" />
+        <!-- file src="icon.png" target="" / -->
+    </files>
+</package>

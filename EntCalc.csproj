@@ -1,46 +1,46 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
-    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <GenerateDocumentationFile>False</GenerateDocumentationFile>
-    <Nullable>enable</Nullable>
-    <BaseOutputPath>bin\</BaseOutputPath>
-    <AssemblyName>EntCalc</AssemblyName>
-    <RootNamespace>Ent</RootNamespace>
-    <PackageId>EntCalc</PackageId>
-    <Authors>John Walker, Jessica Mulein</Authors>
-    <Company>John Walker, Jessica Mulein</Company>
-    <Product>EntCalc</Product>
-    <Description>C# Port of John Walker's EntCalc</Description>
-    <IsPackable>true</IsPackable>
-  </PropertyGroup>
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+        <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+        <GenerateDocumentationFile>False</GenerateDocumentationFile>
+        <Nullable>enable</Nullable>
+        <BaseOutputPath>bin\</BaseOutputPath>
+        <AssemblyName>EntCalc</AssemblyName>
+        <RootNamespace>Ent</RootNamespace>
+        <PackageId>EntCalc</PackageId>
+        <Authors>John Walker, Jessica Mulein</Authors>
+        <Company>John Walker, Jessica Mulein</Company>
+        <Product>EntCalc</Product>
+        <Description>C# Port of John Walker's EntCalc</Description>
+        <IsPackable>true</IsPackable>
+    </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <PlatformTarget>AnyCPU</PlatformTarget>
-  </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+    </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <PlatformTarget>AnyCPU</PlatformTarget>
-  </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+    </PropertyGroup>
 
-  <ItemGroup>
-    <Compile Remove="AssemblyInfo.cs" />
-    <Compile Remove="iso8859.cs" />
-  </ItemGroup>
+    <ItemGroup>
+        <Compile Remove="AssemblyInfo.cs"/>
+        <Compile Remove="iso8859.cs"/>
+    </ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="DotNetAnalyzers.DocumentationAnalyzers" Version="1.0.0-beta.59">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
-    <PackageReference Include="Microsoft.Extensions.Logging" Version="6.0.0" />
-    <PackageReference Include="StyleCop.Analyzers" Version="1.2.0-beta.354">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
-  </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="DotNetAnalyzers.DocumentationAnalyzers" Version="1.0.0-beta.59">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Microsoft.Extensions.Logging" Version="6.0.0"/>
+        <PackageReference Include="StyleCop.Analyzers" Version="1.2.0-beta.354">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+    </ItemGroup>
 
 
 </Project>

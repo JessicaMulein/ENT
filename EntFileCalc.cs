@@ -1,32 +1,34 @@
-﻿namespace Ent
+﻿using System.IO;
+
+namespace Ent;
+
+public class EntFileCalc
 {
-    using System.IO;
-
-    public class EntFileCalc
+    public static EntCalc.EntCalcResult CalculateFile(ref FileStream inStream)
     {
-        public static EntCalc.EntCalcResult CalculateFile(ref FileStream inStream)
+        var entCalc = new EntCalc(binmode: false);
+        while (inStream.Position < inStream.Length)
         {
-
-            EntCalc entCalc = new EntCalc(false);
-            while (inStream.Position < inStream.Length)
-            {
-                entCalc.AddSample((byte)inStream.ReadByte(), false);
-            }
-
-            return entCalc.EndCalculation();
+            entCalc.AddSample(buf: (byte)inStream.ReadByte(),
+                Fold: false);
         }
 
-        public static Ent.EntCalc.EntCalcResult CalculateFile(string inFileName)
-        {
-            FileStream instream = new FileStream(inFileName, FileMode.Open, FileAccess.Read, FileShare.None);
+        return entCalc.EndCalculation();
+    }
 
-            instream.Position = 0;
+    public static EntCalc.EntCalcResult CalculateFile(string inFileName)
+    {
+        var instream = new FileStream(path: inFileName,
+            mode: FileMode.Open,
+            access: FileAccess.Read,
+            share: FileShare.None);
 
-            EntCalc.EntCalcResult tmpRes = CalculateFile(ref instream);
+        instream.Position = 0;
 
-            instream.Close();
+        var tmpRes = CalculateFile(inStream: ref instream);
 
-            return tmpRes;
-        }
+        instream.Close();
+
+        return tmpRes;
     }
 }
